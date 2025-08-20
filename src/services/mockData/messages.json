@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "conversationId": 1,
+    "orderId": 3,
+    "senderId": "customer-003",
+    "senderName": "Fatimata Kaboré",
+    "content": "Bonjour, j'aimerais savoir où vous êtes exactement ?",
+    "timestamp": "2024-01-16T19:15:00Z"
+  },
+  {
+    "Id": 2,
+    "conversationId": 1,
+    "orderId": 3,
+    "senderId": "driver-002",
+    "senderName": "Alassane Zongo",
+    "content": "Bonjour ! Je suis en route, j'arrive dans environ 10 minutes. Je suis actuellement au rond-point de Cissin.",
+    "timestamp": "2024-01-16T19:17:00Z"
+  },
+  {
+    "Id": 3,
+    "conversationId": 1,
+    "orderId": 3,
+    "senderId": "customer-003",
+    "senderName": "Fatimata Kaboré",
+    "content": "Parfait ! Je vous attends devant la maison. C'est la maison 456, juste après l'école primaire.",
+    "timestamp": "2024-01-16T19:18:00Z"
+  },
+  {
+    "Id": 4,
+    "conversationId": 2,
+    "orderId": 4,
+    "senderId": "driver-003",
+    "senderName": "Boureima Sawadogo",
+    "content": "Bonjour ! J'ai récupéré votre commande d'huile de karité. Je pars maintenant vers votre adresse.",
+    "timestamp": "2024-01-17T10:30:00Z"
+  },
+  {
+    "Id": 5,
+    "conversationId": 2,
+    "orderId": 4,
+    "senderId": "customer-001",
+    "senderName": "Aminata Ouédraogo",
+    "content": "Merci beaucoup ! Je suis à la maison. N'hésitez pas si vous avez du mal à trouver.",
+    "timestamp": "2024-01-17T10:32:00Z"
+  }
+]
