@@ -90,7 +90,7 @@ const handleLogin = (email, role = 'customer') => {
   return (
     <Router>
 <div className="min-h-screen bg-gray-50 relative">
-        <RoleSelector 
+<RoleSelector 
           currentRole={currentRole} 
           onRoleChange={setCurrentRole} 
           userEmail={userEmail}

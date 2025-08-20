@@ -11,7 +11,7 @@ export const getAll = async () => {
 
 export const getById = async (id) => {
   await delay();
-  const product = products.find(p => p.Id === id);
+  const product = products.find(p => p.Id === parseInt(id));
   if (!product) {
     throw new Error("Product not found");
   }
@@ -32,7 +32,7 @@ export const create = async (productData) => {
 
 export const update = async (id, productData) => {
   await delay();
-  const index = products.findIndex(p => p.Id === id);
+  const index = products.findIndex(p => p.Id === parseInt(id));
   if (index === -1) {
     throw new Error("Product not found");
   }
@@ -47,7 +47,7 @@ export const update = async (id, productData) => {
 
 export const delete_ = async (id) => {
   await delay();
-  const index = products.findIndex(p => p.Id === id);
+  const index = products.findIndex(p => p.Id === parseInt(id));
   if (index === -1) {
     throw new Error("Product not found");
   }

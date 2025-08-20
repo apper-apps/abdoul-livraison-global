@@ -11,7 +11,7 @@ export const getAll = async () => {
 
 export const getById = async (id) => {
   await delay();
-  const order = orders.find(o => o.Id === id);
+  const order = orders.find(o => o.Id === parseInt(id));
   if (!order) {
     throw new Error("Order not found");
   }
@@ -24,6 +24,7 @@ export const create = async (orderData) => {
   const newOrder = {
     Id: maxId + 1,
     ...orderData,
+    status: "placed",
     createdAt: new Date().toISOString()
   };
   orders.push(newOrder);
@@ -32,7 +33,7 @@ export const create = async (orderData) => {
 
 export const update = async (id, orderData) => {
   await delay();
-  const index = orders.findIndex(o => o.Id === id);
+  const index = orders.findIndex(o => o.Id === parseInt(id));
   if (index === -1) {
     throw new Error("Order not found");
   }
@@ -47,7 +48,7 @@ export const update = async (id, orderData) => {
 
 export const delete_ = async (id) => {
   await delay();
-  const index = orders.findIndex(o => o.Id === id);
+  const index = orders.findIndex(o => o.Id === parseInt(id));
   if (index === -1) {
     throw new Error("Order not found");
   }
