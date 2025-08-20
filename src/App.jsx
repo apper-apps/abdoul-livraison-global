@@ -19,9 +19,10 @@ function App() {
   const [currentRole, setCurrentRole] = useState("customer");
   const [cart, setCart] = useState([]);
 
-  const handleLogin = (email) => {
+const handleLogin = (email, role = 'customer') => {
     setIsAuthenticated(true);
     setUserEmail(email);
+    setCurrentRole(role);
   };
 
   const handleLogout = () => {
