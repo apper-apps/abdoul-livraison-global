@@ -11,11 +11,25 @@ import ProductsPage from "@/components/pages/ProductsPage";
 import CartPage from "@/components/pages/CartPage";
 import CheckoutPage from "@/components/pages/CheckoutPage";
 import OrderDetailsPage from "@/components/pages/OrderDetailsPage";
+import LoginPage from "@/components/pages/LoginPage";
 import RoleSelector from "@/components/organisms/RoleSelector";
-
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [userEmail, setUserEmail] = useState("");
   const [currentRole, setCurrentRole] = useState("customer");
   const [cart, setCart] = useState([]);
+
+  const handleLogin = (email) => {
+    setIsAuthenticated(true);
+    setUserEmail(email);
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    setUserEmail("");
+    setCurrentRole("customer");
+    setCart([]);
+  };
 
   const addToCart = (product, quantity = 1) => {
     setCart(prevCart => {
@@ -50,10 +64,37 @@ function App() {
 
   const cartTotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
 
+  // Show login page if not authenticated
+  if (!isAuthenticated) {
+    return (
+      <Router>
+        <div className="min-h-screen">
+          <LoginPage onLogin={handleLogin} />
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+        </div>
+      </Router>
+    );
+  }
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50 relative">
-        <RoleSelector currentRole={currentRole} onRoleChange={setCurrentRole} />
+<div className="min-h-screen bg-gray-50 relative">
+        <RoleSelector 
+          currentRole={currentRole} 
+          onRoleChange={setCurrentRole} 
+          userEmail={userEmail}
+          onLogout={handleLogout}
+        />
         
         <AnimatePresence mode="wait">
           <Routes>
@@ -62,7 +103,7 @@ function App() {
               <Route path="orders" element={<OrdersPage currentRole={currentRole} />} />
               <Route path="orders/:orderId" element={<OrderDetailsPage currentRole={currentRole} />} />
               <Route path="chat" element={<ChatPage currentRole={currentRole} />} />
-              <Route path="profile" element={<ProfilePage currentRole={currentRole} />} />
+              <Route path="profile" element={<ProfilePage currentRole={currentRole} userEmail={userEmail} />} />
               <Route path="products" element={<ProductsPage />} />
               <Route path="cart" element={<CartPage cart={cart} updateQuantity={updateCartQuantity} total={cartTotal} />} />
               <Route path="checkout" element={<CheckoutPage cart={cart} total={cartTotal} clearCart={clearCart} />} />
