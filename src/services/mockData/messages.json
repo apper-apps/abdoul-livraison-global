@@ -1,6 +1,6 @@
 [
   {
-    "Id": 1,
+    "id": 1,
     "conversationId": 1,
     "orderId": 3,
     "senderId": "customer-003",
@@ -9,7 +9,7 @@
     "timestamp": "2024-01-16T19:15:00Z"
   },
   {
-    "Id": 2,
+    "id": 2,
     "conversationId": 1,
     "orderId": 3,
     "senderId": "driver-002",
@@ -18,7 +18,7 @@
     "timestamp": "2024-01-16T19:17:00Z"
   },
   {
-    "Id": 3,
+    "id": 3,
     "conversationId": 1,
     "orderId": 3,
     "senderId": "customer-003",
@@ -27,7 +27,7 @@
     "timestamp": "2024-01-16T19:18:00Z"
   },
   {
-    "Id": 4,
+    "id": 4,
     "conversationId": 2,
     "orderId": 4,
     "senderId": "driver-003",
@@ -36,7 +36,7 @@
     "timestamp": "2024-01-17T10:30:00Z"
   },
   {
-    "Id": 5,
+    "id": 5,
     "conversationId": 2,
     "orderId": 4,
     "senderId": "customer-001",

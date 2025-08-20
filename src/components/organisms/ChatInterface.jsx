@@ -41,9 +41,9 @@ const ChatInterface = ({ messages = [], onSendMessage, currentUserId }) => {
             </p>
           </div>
         ) : (
-          messages.map((message) => (
+messages.map((message, index) => (
             <ChatMessage
-              key={message.id}
+              key={message.Id || message.id || `message-${index}`}
               message={message}
               isOwn={message.senderId === currentUserId}
             />
