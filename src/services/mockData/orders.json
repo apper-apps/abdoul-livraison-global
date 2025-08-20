@@ -1,0 +1,596 @@
+[
+  {
+    "Id": 1,
+    "customerName": "Marie Diallo",
+    "customerPhone": "+221776543210",
+    "customerEmail": "marie.diallo@gmail.com",
+    "orderDate": "2024-01-15T10:30:00",
+    "deliveryDate": "2024-01-15T15:45:00",
+    "status": "delivered",
+    "items": [
+      {
+        "productName": "Thieboudienne",
+        "quantity": 2,
+        "unitPrice": 3500,
+        "totalPrice": 7000
+      },
+      {
+        "productName": "Bissap",
+        "quantity": 2,
+        "unitPrice": 1000,
+        "totalPrice": 2000
+      }
+    ],
+    "subtotal": 9000,
+    "deliveryFee": 1500,
+    "totalAmount": 10500,
+    "deliveryAddress": {
+      "street": "Rue 10, Sicap Liberté",
+      "city": "Dakar",
+      "district": "Liberté 6",
+      "postalCode": "10700",
+      "coordinates": {
+        "lat": 14.7319,
+        "lng": -17.4731
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "cash",
+    "paymentStatus": "paid",
+    "notes": "Appartement au 2ème étage"
+  },
+  {
+    "Id": 2,
+    "customerName": "Abdou Sarr",
+    "customerPhone": "+221777890123",
+    "customerEmail": "abdou.sarr@hotmail.com",
+    "orderDate": "2024-01-15T14:20:00",
+    "deliveryDate": "2024-01-15T18:30:00",
+    "status": "delivering",
+    "items": [
+      {
+        "productName": "Yassa Poulet",
+        "quantity": 1,
+        "unitPrice": 4000,
+        "totalPrice": 4000
+      },
+      {
+        "productName": "Riz au Gras",
+        "quantity": 1,
+        "unitPrice": 3000,
+        "totalPrice": 3000
+      }
+    ],
+    "subtotal": 7000,
+    "deliveryFee": 2000,
+    "totalAmount": 9000,
+    "deliveryAddress": {
+      "street": "Avenue Cheikh Anta Diop",
+      "city": "Dakar",
+      "district": "Fann",
+      "postalCode": "10200",
+      "coordinates": {
+        "lat": 14.6928,
+        "lng": -17.4467
+      }
+    },
+    "deliveryType": "express",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "notes": "Livrer avant 19h"
+  },
+  {
+    "Id": 3,
+    "customerName": "Fatou Ndiaye",
+    "customerPhone": "+221765432109",
+    "customerEmail": "fatou.ndiaye@yahoo.fr",
+    "orderDate": "2024-01-15T16:45:00",
+    "deliveryDate": null,
+    "status": "preparing",
+    "items": [
+      {
+        "productName": "Ceebu Jen",
+        "quantity": 3,
+        "unitPrice": 3800,
+        "totalPrice": 11400
+      },
+      {
+        "productName": "Jus de Gingembre",
+        "quantity": 3,
+        "unitPrice": 1200,
+        "totalPrice": 3600
+      }
+    ],
+    "subtotal": 15000,
+    "deliveryFee": 1500,
+    "totalAmount": 16500,
+    "deliveryAddress": {
+      "street": "Cité Keur Gorgui",
+      "city": "Dakar",
+      "district": "Médina",
+      "postalCode": "11000",
+      "coordinates": {
+        "lat": 14.6760,
+        "lng": -17.4441
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "mobile_money",
+    "paymentStatus": "pending",
+    "notes": "Appeler avant de venir"
+  },
+  {
+    "Id": 4,
+    "customerName": "Moussa Ba",
+    "customerPhone": "+221778901234",
+    "customerEmail": "moussa.ba@gmail.com",
+    "orderDate": "2024-01-15T12:15:00",
+    "deliveryDate": "2024-01-15T13:30:00",
+    "status": "delivered",
+    "items": [
+      {
+        "productName": "Domoda",
+        "quantity": 1,
+        "unitPrice": 3200,
+        "totalPrice": 3200
+      },
+      {
+        "productName": "Attaya",
+        "quantity": 1,
+        "unitPrice": 800,
+        "totalPrice": 800
+      }
+    ],
+    "subtotal": 4000,
+    "deliveryFee": 1000,
+    "totalAmount": 5000,
+    "deliveryAddress": {
+      "street": "Parcelles Assainies U10",
+      "city": "Dakar",
+      "district": "Parcelles",
+      "postalCode": "12500",
+      "coordinates": {
+        "lat": 14.7644,
+        "lng": -17.4031
+      }
+    },
+    "deliveryType": "pickup",
+    "paymentMethod": "cash",
+    "paymentStatus": "paid",
+    "notes": "À récupérer au comptoir"
+  },
+  {
+    "Id": 5,
+    "customerName": "Aïsha Faye",
+    "customerPhone": "+221776123456",
+    "customerEmail": "aisha.faye@outlook.com",
+    "orderDate": "2024-01-15T18:00:00",
+    "deliveryDate": null,
+    "status": "confirmed",
+    "items": [
+      {
+        "productName": "Mafé",
+        "quantity": 2,
+        "unitPrice": 3600,
+        "totalPrice": 7200
+      },
+      {
+        "productName": "Dakhin",
+        "quantity": 1,
+        "unitPrice": 2500,
+        "totalPrice": 2500
+      }
+    ],
+    "subtotal": 9700,
+    "deliveryFee": 1800,
+    "totalAmount": 11500,
+    "deliveryAddress": {
+      "street": "Route de Rufisque",
+      "city": "Pikine",
+      "district": "Pikine Est",
+      "postalCode": "13000",
+      "coordinates": {
+        "lat": 14.7515,
+        "lng": -17.3984
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "notes": "Maison bleue avec portail blanc"
+  },
+  {
+    "Id": 6,
+    "customerName": "Oumar Diop",
+    "customerPhone": "+221789012345",
+    "customerEmail": "oumar.diop@gmail.com",
+    "orderDate": "2024-01-14T19:30:00",
+    "deliveryDate": "2024-01-14T21:00:00",
+    "status": "delivered",
+    "items": [
+      {
+        "productName": "Pastels",
+        "quantity": 6,
+        "unitPrice": 400,
+        "totalPrice": 2400
+      },
+      {
+        "productName": "Café Touba",
+        "quantity": 2,
+        "unitPrice": 600,
+        "totalPrice": 1200
+      }
+    ],
+    "subtotal": 3600,
+    "deliveryFee": 1200,
+    "totalAmount": 4800,
+    "deliveryAddress": {
+      "street": "HLM Grand Médine",
+      "city": "Dakar",
+      "district": "Grand Dakar",
+      "postalCode": "11500",
+      "coordinates": {
+        "lat": 14.7167,
+        "lng": -17.4765
+      }
+    },
+    "deliveryType": "express",
+    "paymentMethod": "mobile_money",
+    "paymentStatus": "paid",
+    "notes": "Bloc 15, appartement 4A"
+  },
+  {
+    "Id": 7,
+    "customerName": "Khady Sall",
+    "customerPhone": "+221767890123",
+    "customerEmail": "khady.sall@live.com",
+    "orderDate": "2024-01-15T20:15:00",
+    "deliveryDate": null,
+    "status": "pending",
+    "items": [
+      {
+        "productName": "Supukanja",
+        "quantity": 1,
+        "unitPrice": 2800,
+        "totalPrice": 2800
+      },
+      {
+        "productName": "Pain de Singe",
+        "quantity": 2,
+        "unitPrice": 1000,
+        "totalPrice": 2000
+      }
+    ],
+    "subtotal": 4800,
+    "deliveryFee": 1500,
+    "totalAmount": 6300,
+    "deliveryAddress": {
+      "street": "Cité Millionnaire",
+      "city": "Guédiawaye",
+      "district": "Golf Sud",
+      "postalCode": "14000",
+      "coordinates": {
+        "lat": 14.7692,
+        "lng": -17.4103
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "cash",
+    "paymentStatus": "pending",
+    "notes": "Proche de la mosquée"
+  },
+  {
+    "Id": 8,
+    "customerName": "Ibrahima Fall",
+    "customerPhone": "+221754321098",
+    "customerEmail": "ibrahima.fall@yahoo.com",
+    "orderDate": "2024-01-15T11:45:00",
+    "deliveryDate": "2024-01-15T14:20:00",
+    "status": "cancelled",
+    "items": [
+      {
+        "productName": "Caldou",
+        "quantity": 1,
+        "unitPrice": 4200,
+        "totalPrice": 4200
+      }
+    ],
+    "subtotal": 4200,
+    "deliveryFee": 1500,
+    "totalAmount": 5700,
+    "deliveryAddress": {
+      "street": "Bel Air",
+      "city": "Dakar",
+      "district": "Bel Air",
+      "postalCode": "10400",
+      "coordinates": {
+        "lat": 14.6892,
+        "lng": -17.4516
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "card",
+    "paymentStatus": "refunded",
+    "notes": "Annulé par le client"
+  },
+  {
+    "Id": 9,
+    "customerName": "Rama Gueye",
+    "customerPhone": "+221743210987",
+    "customerEmail": "rama.gueye@hotmail.fr",
+    "orderDate": "2024-01-15T15:30:00",
+    "deliveryDate": null,
+    "status": "preparing",
+    "items": [
+      {
+        "productName": "Ndambé",
+        "quantity": 2,
+        "unitPrice": 2200,
+        "totalPrice": 4400
+      },
+      {
+        "productName": "Wonjo",
+        "quantity": 2,
+        "unitPrice": 900,
+        "totalPrice": 1800
+      }
+    ],
+    "subtotal": 6200,
+    "deliveryFee": 1000,
+    "totalAmount": 7200,
+    "deliveryAddress": {
+      "street": "Dieuppeul",
+      "city": "Dakar",
+      "district": "Dieuppeul",
+      "postalCode": "11200",
+      "coordinates": {
+        "lat": 14.7531,
+        "lng": -17.4594
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "mobile_money",
+    "paymentStatus": "paid",
+    "notes": "Devant la pharmacie"
+  },
+  {
+    "Id": 10,
+    "customerName": "Seynabou Thiam",
+    "customerPhone": "+221732109876",
+    "customerEmail": "seynabou.thiam@gmail.com",
+    "orderDate": "2024-01-15T13:20:00",
+    "deliveryDate": "2024-01-15T16:45:00",
+    "status": "delivered",
+    "items": [
+      {
+        "productName": "Lakhou Bissap",
+        "quantity": 1,
+        "unitPrice": 2500,
+        "totalPrice": 2500
+      },
+      {
+        "productName": "Thiakry",
+        "quantity": 3,
+        "unitPrice": 800,
+        "totalPrice": 2400
+      }
+    ],
+    "subtotal": 4900,
+    "deliveryFee": 1200,
+    "totalAmount": 6100,
+    "deliveryAddress": {
+      "street": "Yoff Tonghor",
+      "city": "Dakar",
+      "district": "Yoff",
+      "postalCode": "12200",
+      "coordinates": {
+        "lat": 14.7397,
+        "lng": -17.4961
+      }
+    },
+    "deliveryType": "express",
+    "paymentMethod": "cash",
+    "paymentStatus": "paid",
+    "notes": "Villa 47, porte verte"
+  },
+  {
+    "Id": 11,
+    "customerName": "Mamadou Diagne",
+    "customerPhone": "+221721098765",
+    "customerEmail": "mamadou.diagne@yahoo.fr",
+    "orderDate": "2024-01-15T17:10:00",
+    "deliveryDate": null,
+    "status": "confirmed",
+    "items": [
+      {
+        "productName": "Soupou Kandja",
+        "quantity": 1,
+        "unitPrice": 3400,
+        "totalPrice": 3400
+      },
+      {
+        "productName": "Jus de Bissap",
+        "quantity": 1,
+        "unitPrice": 1000,
+        "totalPrice": 1000
+      }
+    ],
+    "subtotal": 4400,
+    "deliveryFee": 1800,
+    "totalAmount": 6200,
+    "deliveryAddress": {
+      "street": "Keur Massar",
+      "city": "Keur Massar",
+      "district": "Keur Massar",
+      "postalCode": "15000",
+      "coordinates": {
+        "lat": 14.7833,
+        "lng": -17.3167
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "notes": "Après le rond-point"
+  },
+  {
+    "Id": 12,
+    "customerName": "Bineta Ly",
+    "customerPhone": "+221710987654",
+    "customerEmail": "bineta.ly@live.fr",
+    "orderDate": "2024-01-15T19:25:00",
+    "deliveryDate": null,
+    "status": "pending",
+    "items": [
+      {
+        "productName": "Firire",
+        "quantity": 4,
+        "unitPrice": 500,
+        "totalPrice": 2000
+      },
+      {
+        "productName": "Tangana",
+        "quantity": 1,
+        "unitPrice": 1500,
+        "totalPrice": 1500
+      }
+    ],
+    "subtotal": 3500,
+    "deliveryFee": 1000,
+    "totalAmount": 4500,
+    "deliveryAddress": {
+      "street": "Ouakam",
+      "city": "Dakar",
+      "district": "Ouakam",
+      "postalCode": "12000",
+      "coordinates": {
+        "lat": 14.7147,
+        "lng": -17.4925
+      }
+    },
+    "deliveryType": "pickup",
+    "paymentMethod": "cash",
+    "paymentStatus": "pending",
+    "notes": "À récupérer"
+  },
+  {
+    "Id": 13,
+    "customerName": "Cheikh Mbaye",
+    "customerPhone": "+221709876543",
+    "customerEmail": "cheikh.mbaye@outlook.fr",
+    "orderDate": "2024-01-14T20:40:00",
+    "deliveryDate": "2024-01-14T22:15:00",
+    "status": "delivered",
+    "items": [
+      {
+        "productName": "Mbaxalou Saloum",
+        "quantity": 2,
+        "unitPrice": 2700,
+        "totalPrice": 5400
+      },
+      {
+        "productName": "Jus de Tamarin",
+        "quantity": 2,
+        "unitPrice": 1100,
+        "totalPrice": 2200
+      }
+    ],
+    "subtotal": 7600,
+    "deliveryFee": 1500,
+    "totalAmount": 9100,
+    "deliveryAddress": {
+      "street": "Cambérène",
+      "city": "Dakar",
+      "district": "Cambérène",
+      "postalCode": "12400",
+      "coordinates": {
+        "lat": 14.7628,
+        "lng": -17.4419
+      }
+    },
+    "deliveryType": "express",
+    "paymentMethod": "mobile_money",
+    "paymentStatus": "paid",
+    "notes": "Immeuble jaune, 1er étage"
+  },
+  {
+    "Id": 14,
+    "customerName": "Marietou Sow",
+    "customerPhone": "+221698765432",
+    "customerEmail": "marietou.sow@gmail.com",
+    "orderDate": "2024-01-15T21:05:00",
+    "deliveryDate": null,
+    "status": "pending",
+    "items": [
+      {
+        "productName": "Couscous Sénégalais",
+        "quantity": 1,
+        "unitPrice": 3800,
+        "totalPrice": 3800
+      },
+      {
+        "productName": "Lait Caillé",
+        "quantity": 1,
+        "unitPrice": 1200,
+        "totalPrice": 1200
+      }
+    ],
+    "subtotal": 5000,
+    "deliveryFee": 1300,
+    "totalAmount": 6300,
+    "deliveryAddress": {
+      "street": "Ngor",
+      "city": "Dakar",
+      "district": "Ngor",
+      "postalCode": "12100",
+      "coordinates": {
+        "lat": 14.7503,
+        "lng": -17.5161
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "card",
+    "paymentStatus": "pending",
+    "notes": "Près de la plage"
+  },
+  {
+    "Id": 15,
+    "customerName": "Pape Sarr",
+    "customerPhone": "+221687654321",
+    "customerEmail": "pape.sarr@hotmail.com",
+    "orderDate": "2024-01-15T14:50:00",
+    "deliveryDate": "2024-01-15T17:30:00",
+    "status": "delivered",
+    "items": [
+      {
+        "productName": "Nététou",
+        "quantity": 1,
+        "unitPrice": 2000,
+        "totalPrice": 2000
+      },
+      {
+        "productName": "Bouye",
+        "quantity": 2,
+        "unitPrice": 800,
+        "totalPrice": 1600
+      }
+    ],
+    "subtotal": 3600,
+    "deliveryFee": 1000,
+    "totalAmount": 4600,
+    "deliveryAddress": {
+      "street": "Almadies",
+      "city": "Dakar",
+      "district": "Almadies",
+      "postalCode": "12300",
+      "coordinates": {
+        "lat": 14.7394,
+        "lng": -17.5297
+      }
+    },
+    "deliveryType": "standard",
+    "paymentMethod": "cash",
+    "paymentStatus": "paid",
+    "notes": "Résidence Ocean View"
+  }
+]
