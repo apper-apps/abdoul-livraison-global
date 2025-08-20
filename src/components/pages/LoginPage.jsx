@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { toast } from 'react-toastify';
-import ApperIcon from '@/components/ApperIcon';
-import Button from '@/components/atoms/Button';
-import Input from '@/components/atoms/Input';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
+import Input from "@/components/atoms/Input";
 
 export default function LoginPage({ onLogin }) {
   const [formData, setFormData] = useState({
@@ -51,69 +51,26 @@ password: ''
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
+const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validateForm()) return;
     
-    if (!validateForm()) {
-      return;
-    }
-
-    setLoading(true);
-    
-    try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // For demo purposes, any valid email/password combination works
-if (formData.email && formData.password) {
-        setLoginData({ email: formData.email, type: 'email' });
-        setShowRoleSelector(true);
-      } else {
-        throw new Error('Invalid credentials');
-      }
-    } catch (error) {
-      toast.error('Login failed. Please check your credentials.');
-      setErrors({
-        password: 'Invalid email or password'
-      });
-    } finally {
-      setLoading(false);
-    }
+    toast.info('Authentication is now handled by ApperUI');
   };
 
-const handleDemoLogin = () => {
-    setFormData({
-      email: 'demo@example.com',
-      password: 'demo123'
-    });
-    setErrors({});
-  };
-
-  const handleGoogleLogin = async () => {
+  const handleGoogleLogin = () => {
     setGoogleLoading(true);
-    try {
-      // Simulate Google OAuth flow
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Mock Google user data
-      const googleUser = {
-        email: 'user@gmail.com',
-        name: 'Google User'
-      };
-      
-      setLoginData({ email: googleUser.email, type: 'google', name: googleUser.name });
-      setShowRoleSelector(true);
-      
-    } catch (error) {
-      toast.error('Google login failed. Please try again.');
-    } finally {
-      setGoogleLoading(false);
-    }
+    toast.info('Google authentication is now handled by ApperUI');
+    setTimeout(() => setGoogleLoading(false), 1000);
   };
 
   const handleRoleConfirmation = () => {
-    toast.success(`Welcome! Logged in as ${selectedRole === 'customer' ? 'Customer' : selectedRole === 'vendor' ? 'Vendor' : 'Delivery Partner'}`);
-    onLogin(loginData.email, selectedRole);
+    setLoading(true);
+    toast.info('Role confirmation is now handled by ApperUI');
+    setTimeout(() => {
+      setLoading(false);
+      setShowRoleSelector(false);
+    }, 1000);
   };
 
   const handleBackToLogin = () => {
@@ -326,20 +283,7 @@ const handleDemoLogin = () => {
           </div>
 
           {/* Demo Login */}
-          <div className="mt-4 pt-4 border-t border-gray-100">
-            <p className="text-sm text-gray-600 text-center mb-3">
-              Want to try the app quickly?
-            </p>
-            <Button
-              variant="outline"
-              onClick={handleDemoLogin}
-              className="w-full"
-              size="sm"
-            >
-              <ApperIcon name="Zap" size={14} className="mr-2" />
-              Fill Demo Credentials
-            </Button>
-          </div>
+{/* Demo credentials section removed - authentication handled by ApperUI */}
 
           {/* Footer */}
           <div className="mt-8 text-center">
