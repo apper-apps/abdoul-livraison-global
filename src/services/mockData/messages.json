@@ -1,0 +1,134 @@
+[
+  {
+    "Id": 1,
+    "conversationId": 1,
+    "senderId": "user123",
+    "senderName": "Alice Johnson",
+    "content": "Hi! I'd like to place an order for delivery to downtown.",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "messageType": "text",
+    "isRead": true,
+    "isDelivered": true
+  },
+  {
+    "Id": 2,
+    "conversationId": 1,
+    "senderId": "agent456",
+    "senderName": "Customer Service",
+    "content": "Hello Alice! I'd be happy to help you with your order. What would you like to order?",
+    "timestamp": "2024-01-15T10:32:00Z",
+    "messageType": "text",
+    "isRead": true,
+    "isDelivered": true
+  },
+  {
+    "Id": 3,
+    "conversationId": 2,
+    "senderId": "user789",
+    "senderName": "Bob Smith",
+    "content": "My delivery is running late. Can you check the status?",
+    "timestamp": "2024-01-15T14:15:00Z",
+    "messageType": "text",
+    "isRead": true,
+    "isDelivered": true
+  },
+  {
+    "Id": 4,
+    "conversationId": 2,
+    "senderId": "driver101",
+    "senderName": "Driver Mike",
+    "content": "Sorry for the delay! I'm about 10 minutes away from your location.",
+    "timestamp": "2024-01-15T14:18:00Z",
+    "messageType": "text",
+    "isRead": true,
+    "isDelivered": true
+  },
+  {
+    "Id": 5,
+    "conversationId": 3,
+    "senderId": "user202",
+    "senderName": "Carol White",
+    "content": "Thank you for the excellent service! The food arrived hot and fresh.",
+    "timestamp": "2024-01-15T19:45:00Z",
+    "messageType": "text",
+    "isRead": true,
+    "isDelivered": true
+  },
+  {
+    "Id": 6,
+    "conversationId": 3,
+    "senderId": "agent456",
+    "senderName": "Customer Service",
+    "content": "We're so glad to hear that! Thank you for your positive feedback.",
+    "timestamp": "2024-01-15T19:47:00Z",
+    "messageType": "text",
+    "isRead": false,
+    "isDelivered": true
+  },
+  {
+    "Id": 7,
+    "conversationId": 4,
+    "senderId": "user345",
+    "senderName": "David Brown",
+    "content": "I need to cancel my order. Something urgent came up.",
+    "timestamp": "2024-01-16T11:20:00Z",
+    "messageType": "text",
+    "isRead": true,
+    "isDelivered": true
+  },
+  {
+    "Id": 8,
+    "conversationId": 4,
+    "senderId": "agent789",
+    "senderName": "Support Team",
+    "content": "No problem! I've cancelled your order and processed the refund. You should see it in 3-5 business days.",
+    "timestamp": "2024-01-16T11:23:00Z",
+    "messageType": "text",
+    "isRead": true,
+    "isDelivered": true
+  },
+  {
+    "Id": 9,
+    "conversationId": 5,
+    "senderId": "user567",
+    "senderName": "Emma Davis",
+    "content": "Can you deliver to the office building entrance?",
+    "timestamp": "2024-01-16T13:10:00Z",
+    "messageType": "text",
+    "isRead": false,
+    "isDelivered": true
+  },
+  {
+    "Id": 10,
+    "conversationId": 5,
+    "senderId": "driver202",
+    "senderName": "Driver Sarah",
+    "content": "Absolutely! I'll call you when I arrive at the entrance.",
+    "timestamp": "2024-01-16T13:12:00Z",
+    "messageType": "text",
+    "isRead": false,
+    "isDelivered": true
+  },
+  {
+    "Id": 11,
+    "conversationId": 6,
+    "senderId": "user890",
+    "senderName": "Frank Wilson",
+    "content": "The app isn't letting me update my delivery address. Can you help?",
+    "timestamp": "2024-01-16T16:30:00Z",
+    "messageType": "text",
+    "isRead": false,
+    "isDelivered": true
+  },
+  {
+    "Id": 12,
+    "conversationId": 6,
+    "senderId": "agent456",
+    "senderName": "Customer Service",
+    "content": "I can help you with that! Please provide your new address and I'll update it for you.",
+    "timestamp": "2024-01-16T16:33:00Z",
+    "messageType": "text",
+    "isRead": false,
+    "isDelivered": true
+  }
+]
